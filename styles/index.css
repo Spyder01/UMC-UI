@@ -1,0 +1,64 @@
+main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+main section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.video-container div {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+
+.video-container div h3 {
+    font-weight: lighter;
+}
+
+#animated-keyword {
+    color: #fff;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.training-title {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-size: 10rem;
+    opacity: 0.9;
+}
+
+#karate-kid-bg {
+    position: absolute;
+    z-index: 0;
+}
+#karate-kid-img {
+    opacity: 0.5;
+}
+
+@media (max-width: 860px) {
+}
