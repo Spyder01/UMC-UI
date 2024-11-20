@@ -43,6 +43,51 @@ h4 {
     user-select: none;
 }
 
+.app-drawer {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background: #000;
+}
+
+.drawer-open {
+    animation: drawer-open 1s forwards;
+}
+
+
+@keyframes drawer-open {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.drawer-close {
+    animation: drawer-close 1s forwards;
+}
+
+@keyframes drawer-close {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+
+.app-drawer-nav {
+    position: absolute;
+    justify-content: flex-end;
+    display: flex;
+}
+
 header nav {
     position: fixed;
     top: 0;

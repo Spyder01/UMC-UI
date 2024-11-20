@@ -1,3 +1,5 @@
+import {openDrawer, closeDrawer} from "./common.js";
+
 //constants
 const titleKeyword = document.getElementById('animated-keyword');
 
@@ -16,4 +18,6 @@ function animateKeyWords() {
 
 window.addEventListener('load', e=>{
     animateKeyWords();
+    openDrawer();
+    closeDrawer();
 });
