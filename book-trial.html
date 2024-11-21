@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/book-trial.css">
+    <title>Book Trial</title>
+</head>
+<body>
+<header>
+    <section class="app-drawer" id="app-drawer">
+        <nav class="app-drawer-nav">
+            <img id="menuBtnClose" class="close-icon" src="assets/close-icon.svg" alt="close"/>
+        </nav>
+
+        <div class="app-drawer-items">
+            <span>
+                <a href="index.html#training">
+                    <h4>Training</h4>
+                </a>
+            </span>
+
+            <span>
+                <a href="index.html#location">
+                    <h4>Location</h4>
+                </a>
+            </span>
+
+            <span>
+                <h4>Meet the team</h4>
+            </span>
+
+            <span>
+                <h4>FAQ</h4>
+            </span>
+        </div>
+    </section>
+    <nav>
+        <section>
+            <h3>
+                <a href="index.html">
+                    UMC
+                </a>
+            </h3>
+        </section>
+        <section class="nav-items">
+            <span>
+                <a href="index.html#training">
+                    <h4>Training</h4>
+                </a>
+            </span>
+
+            <span>
+                <a href="index.html#location">
+                    <h4>Location</h4>
+                </a>
+            </span>
+
+            <span>
+                <h4>Meet the team</h4>
+            </span>
+
+            <span>
+                <h4>FAQ</h4>
+            </span>
+        </section>
+        <section>
+            <span class="menu-icon-container">
+                <img src="assets/menu-icon.svg" alt="menu-icon" class="menu-icon" id="menuBtnOpen"/>
+            </span>
+        </section>
+    </nav>
+</header>
+<main>
+    <section class="page">
+        <div class="hero-section">
+            <h1>
+                Book a Free Trial
+            </h1>
+            <p>
+                We here in United Martial Arts Club follow a specialized regime to set ourselves apart from the rest. By
+                incorporating equal parts strength and skill training, we make sure you not just know what to do, but
+                also would be able to do it.
+            </p>
+
+            <a href="book-trial.html#trial-form" class="btn" id="form-btn">
+                    Book Trial
+            </a>
+        </div>
+        <div class="trial-form-container">
+
+            <form id="trial-form">
+
+                <span>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </span>
+
+
+                <span>
+                    <label for="phone">Phone Number</label>
+                   <input type="text" id="phone" name="phone" placeholder="phone" required>
+                </span>
+
+
+                <span>
+                    <label for="location">Location</label>
+                    <select name="location" id="location">
+                        <option value="Bannergata">Bannergata</option>
+                        <option value="HSR Layout">HSR Layout</option>
+                    </select>
+                </span>
+
+                <input id="smt-btn" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </section>
+</main>
+<script src="./scripts/book-trial.js" type="module"></script>
+</body>
+</html>

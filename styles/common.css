@@ -51,6 +51,7 @@ h4 {
     width: 100%;
     z-index: 100;
     background: #000;
+    display: none;
 }
 
 .drawer-open {
@@ -196,6 +197,22 @@ header nav section span h4:hover:after {
     padding: 5px;
 }
 
+.btn {
+    border: solid #ffffff 1px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 150;
+}
+
+.btn:hover {
+    scale: 1.1;
+    color: #010101;
+    background-color: #fff;
+}
+
 
 @media (max-width: 860px) {
     h1 {
@@ -208,5 +225,9 @@ header nav section span h4:hover:after {
 
     .menu-icon-container {
         display: flex;
+    }
+
+    .app-drawer {
+        display: block;
     }
 }
