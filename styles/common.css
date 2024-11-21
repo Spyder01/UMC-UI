@@ -86,6 +86,37 @@ h4 {
     position: absolute;
     justify-content: flex-end;
     display: flex;
+    padding: 15px;
+}
+
+#menuBtnClose {
+    cursor: pointer;
+}
+
+.app-drawer-items {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+}
+
+.app-drawer-items span {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app-drawer-items span:hover {
+    scale: 1.1;
+}
+
+.app-drawer-items span h4 {
+    font-size: 2rem;
 }
 
 header nav {

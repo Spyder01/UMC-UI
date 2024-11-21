@@ -2,6 +2,7 @@ import {openDrawer, closeDrawer} from "./common.js";
 
 //constants
 const titleKeyword = document.getElementById('animated-keyword');
+const anchorLinks = document.getElementsByTagName('a');
 
 function animateKeyWords() {
     const keywords = ['a Champion', 'a Fighter', 'a Survivor', 'the Best'];
@@ -19,5 +20,5 @@ function animateKeyWords() {
 window.addEventListener('load', e=>{
     animateKeyWords();
     openDrawer();
-    closeDrawer();
+    closeDrawer(anchorLinks);
 });
